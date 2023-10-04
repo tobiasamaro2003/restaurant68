@@ -11,7 +11,7 @@ package restaurant68.Entidades;
  */
 public class Producto {
 
-    int idPedido;
+    int idProducto;
     String tipoDeProducto;
     String nombre;
     int Stock;
@@ -21,8 +21,8 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(int idPedido, String nombre, String tipoDeProducto, int Stock, int precio, boolean estado) {
-        this.idPedido = idPedido;
+    public Producto(int idProducto, String nombre, String tipoDeProducto, int Stock, int precio, boolean estado) {
+        this.idProducto = idProducto;
         this.nombre = nombre;
         this.tipoDeProducto = tipoDeProducto;
 
@@ -40,12 +40,12 @@ public class Producto {
         this.estado = estado;
     }
 
-    public int getIdPedido() {
-        return idPedido;
+    public int getIdProducto() {
+        return idProducto;
     }
 
-    public void setIdPedido(int idPedido) {
-        this.idPedido = idPedido;
+    public void setIdProducto(int idProducto) {
+        this.idProducto = idProducto;
     }
 
     public String getTipoDeProducto() {
@@ -90,7 +90,6 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto{" + "idPedido=" + idPedido + ", tipoDeProducto=" + tipoDeProducto + ", nombre=" + nombre + ", Stock=" + Stock + ", precio=" + precio + ", estado=" + estado + '}';
+        return "Producto{" + "idProducto=" + idProducto + ", tipoDeProducto=" + tipoDeProducto + ", nombre=" + nombre + ", Stock=" + Stock + ", precio=" + precio + ", estado=" + estado + '}';
     }
-
 }

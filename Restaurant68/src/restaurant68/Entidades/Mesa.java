@@ -1,9 +1,9 @@
-
 package restaurant68.Entidades;
 
 public class Mesa {
+
     int idMesa;
-    Pedidos pedido;
+
     int capacidad; ///-
     Reserva reserva;
     Mesero mesero;
@@ -12,17 +12,15 @@ public class Mesa {
     public Mesa() {
     }
 
-    public Mesa(int idMesa, Pedidos pedido, int capacidad, Reserva reserva, Mesero mesero, boolean estado) {
+    public Mesa(int idMesa, int capacidad, Reserva reserva, Mesero mesero, boolean estado) {
         this.idMesa = idMesa;
-        this.pedido = pedido;
         this.capacidad = capacidad;
         this.reserva = reserva;
         this.mesero = mesero;
         this.estado = estado;
     }
 
-    public Mesa(Pedidos pedido, int capacidad, Reserva reserva, Mesero mesero, boolean estado) {
-        this.pedido = pedido;
+    public Mesa(int capacidad, Reserva reserva, Mesero mesero, boolean estado) {
         this.capacidad = capacidad;
         this.reserva = reserva;
         this.mesero = mesero;
@@ -35,14 +33,6 @@ public class Mesa {
 
     public void setIdMesa(int idMesa) {
         this.idMesa = idMesa;
-    }
-
-    public Pedidos getPedido() {
-        return pedido;
-    }
-
-    public void setPedido(Pedidos pedido) {
-        this.pedido = pedido;
     }
 
     public int getCapacidad() {
@@ -79,7 +69,9 @@ public class Mesa {
 
     @Override
     public String toString() {
-        return "Mesa{" + "idMesa=" + idMesa + ", pedido=" + pedido + ", capacidad=" + capacidad + ", reserva=" + reserva + ", mesero=" + mesero + ", estado=" + estado + '}';
+        return "Mesa{" + "idMesa=" + idMesa + ", capacidad=" + capacidad + ", reserva=" + reserva + ", mesero=" + mesero + ", estado=" + estado + '}';
     }
+
     
+
 }

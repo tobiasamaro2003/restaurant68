@@ -23,11 +23,11 @@ public class Restaurant68 {
         // TODO code application logic here
         Connection con = Conexion.getConexion();
         ProductoData productoData= new ProductoData();
-        Producto producto = new Producto(1,"Coca-Cola","Bebida sin alcohol",30, 500,true );
+        Producto producto = new Producto("Fanta","Bebida sin alcohol",30,400,true);
         
-      //  productoData.agregarProducto(producto);
-     // productoData.modificarProducto(producto);
-     productoData.eliminarProducto(1);
+       //productoData.agregarProducto(producto);
+      //productoData.modificarProducto(producto);
+     productoData.eliminarProducto(2);
     }
     
 }

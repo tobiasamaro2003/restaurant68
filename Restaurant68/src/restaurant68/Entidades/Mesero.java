@@ -14,29 +14,24 @@ public class Mesero {
     String apellido;
     String nombre; 
     int dni; // ---
-    Mesa mesa;
-    Pedidos pedido;
     boolean estado;
 
     public Mesero() {
     }
 
-    public Mesero(int idMesero, String apellido, String nombre, int dni, Mesa mesa, Pedidos pedido, boolean estado) {
+    public Mesero(int idMesero, String apellido, String nombre, int dni,boolean estado) {
         this.idMesero = idMesero;
         this.apellido = apellido;
         this.nombre = nombre;
         this.dni = dni;
-        this.mesa = mesa;
-        this.pedido = pedido;
         this.estado = estado;
     }
 
-    public Mesero(String apellido, String nombre, int dni, Mesa mesa, Pedidos pedido, boolean estado) {
+    public Mesero(String apellido, String nombre, int dni, boolean estado) {
         this.apellido = apellido;
         this.nombre = nombre;
         this.dni = dni;
-        this.mesa = mesa;
-        this.pedido = pedido;
+        
         this.estado = estado;
     }
 
@@ -72,22 +67,6 @@ public class Mesero {
         this.dni = dni;
     }
 
-    public Mesa getMesa() {
-        return mesa;
-    }
-
-    public void setMesa(Mesa mesa) {
-        this.mesa = mesa;
-    }
-
-    public Pedidos getPedido() {
-        return pedido;
-    }
-
-    public void setPedido(Pedidos pedido) {
-        this.pedido = pedido;
-    }
-
     public boolean isEstado() {
         return estado;
     }
@@ -98,7 +77,6 @@ public class Mesero {
 
     @Override
     public String toString() {
-        return "Mesero{" + "idMesero=" + idMesero + ", apellido=" + apellido + ", nombre=" + nombre + ", dni=" + dni + ", mesa=" + mesa + ", pedido=" + pedido + ", estado=" + estado + '}';
-    }
-    
+        return "Mesero{" + "idMesero=" + idMesero + ", apellido=" + apellido + ", nombre=" + nombre + ", dni=" + dni + ", estado=" + estado + '}';
+    }   
 }
